@@ -2,9 +2,9 @@
 	<ul>
 		<li class="clearfix">
 		  <div class="message" :class="{ self, 'other': !self }">
-		    Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? 
+		    Well I am not sure. The rest of the teamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteamteam is not here yet. Maybe in an hour or so? 
 		  	<div class="date">13:00</div>
-		  	<div class="corner" :class="{ 'corner-self': self, 'corner-other': !self }"></div>
+		  	<div v-if="corner" class="corner" :class="{ 'corner-self': self, 'corner-other': !self }"></div>
 		  </div>
 		</li>
 	</ul>
@@ -14,6 +14,10 @@
 export default {
 	props: {
 		self: {
+			type: Boolean,
+			default: true
+		},
+		corner: {
 			type: Boolean,
 			default: true
 		}
@@ -36,6 +40,7 @@ ul {
 	height: 0;
 }
 .message {
+	word-wrap: break-word;
   line-height: 26px;
   font-size: 13.6px;
   font-weight: 400;

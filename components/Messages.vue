@@ -1,8 +1,8 @@
 <template>
 	<div id="messages-container" class="messages-container">
 		<section class="messages">
-			<message v-for="x in messages()" :key="x"
-				:self="x % 2 === 0" />
+			<message v-for="x in messages" :key="x.id"
+				:self="x.self" :corner="x.displayCorner" />
 		</section>
 	</div>
 </template>
@@ -13,15 +13,25 @@ import Message from '@/components/Message'
 export default {
 	data() {
 		return {
-			messages: () => {
-				let items = []
-				for (let i = 0; i < 20; i++) {
-					items.push(i)
-				}
-				return items
-			}
+			messages: [],
+			lastSelf: undefined
 		}
 	},
+
+	mounted() {
+		let items = []
+		for (let i = 0; i < 20; i++) {
+			let item = { id: i, self: i % 4 === 0, displayCorner: false }
+
+			if (this.lastSelf !== item.self) {
+				item.displayCorner = true
+				this.lastSelf = item.self
+			}
+			items.push(item)
+		}
+		this.messages = items
+	},
+
 	components: {
 		Message
 	}
@@ -29,18 +39,6 @@ export default {
 </script>
 
 <style scoped>
-::-webkit-scrollbar-track {
-	background-color: transparent;
-}
-
-::-webkit-scrollbar {
-	width: 6px;
-	background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.2);
-}
 
 .messages-container {
 	/*background-color: #f4f5f2;*/
