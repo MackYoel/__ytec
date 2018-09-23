@@ -86,9 +86,9 @@
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.4.tgz#7c560ff732c6c7c7c179ae25227ce5449e6f6d65"
 
-"@fortawesome/fontawesome-svg-core@^1.2.4":
+"@fortawesome/fontawesome-svg-core@^1.2.0-13", "@fortawesome/fontawesome-svg-core@^1.2.4":
   version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.4.tgz#2e40c65e66c7ad5aabc179a2d7c5827b1599905c"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.4.tgz#2e40c65e66c7ad5aabc179a2d7c5827b1599905c"
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.4"
 
@@ -98,9 +98,27 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.4"
 
-"@fortawesome/vue-fontawesome@^0.1.1":
+"@fortawesome/pro-light-svg-icons@^5.3.1-10":
+  version "5.3.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-light-svg-icons/-/pro-light-svg-icons-5.3.1.tgz#186c9819d49987d248f2eede994ae9e7bc4354d3"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.4"
+
+"@fortawesome/pro-regular-svg-icons@^5.3.1-10":
+  version "5.3.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-regular-svg-icons/-/pro-regular-svg-icons-5.3.1.tgz#79e835ae8b73a5d99782b503a1e3b3caa8f1fabc"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.4"
+
+"@fortawesome/pro-solid-svg-icons@^5.3.1-10":
+  version "5.3.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/pro-solid-svg-icons-5.3.1.tgz#b09c2cce921e8a2295ab8ac73499975b124eb953"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.4"
+
+"@fortawesome/vue-fontawesome@^0.1.0-4", "@fortawesome/vue-fontawesome@^0.1.1":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.1.tgz#f54cad4028213a011c6ecb10eaf2b99dbd4a8496"
+  resolved "https://npm.fontawesome.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.1.tgz#f54cad4028213a011c6ecb10eaf2b99dbd4a8496"
 
 "@neax/designup@^0.2.0-alpha1":
   version "0.2.0-alpha1"

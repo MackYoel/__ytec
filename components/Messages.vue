@@ -1,8 +1,7 @@
 <template>
 	<div id="messages-container" class="messages-container">
 		<section class="messages">
-			<message v-for="x in messages" :key="x.id"
-				:self="x.self" :corner="x.displayCorner" />
+			<message v-for="x in messages" :key="x.id" :self="x.self" :corner="x.displayCorner" />
 		</section>
 	</div>
 </template>
@@ -41,7 +40,6 @@ export default {
 <style scoped>
 
 .messages-container {
-	/*background-color: #f4f5f2;*/
 	position: absolute;
 	bottom: 62px;
 	right: 0;
@@ -51,7 +49,6 @@ export default {
 }
 .messages {
 	overflow-y: scroll;
-	/*background-color: #fbfbff;*/
 	height: 100%;
 	padding: 0 1em;
 }
